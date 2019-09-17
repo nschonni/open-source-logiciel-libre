@@ -13,53 +13,6 @@ github_username: canada-ca
 wet_cdts_hosturl: "https://www.canada.ca/etc/designs/canada/cdts/gcweb"
 wet_cdts_version: "v4_0_31"
 
-# Translations
-title:
-  en: Open Source Software Standards
-  fr: Logiciels libres
-description:
-  en: Open source software used and released by Canadian public administrations
-  fr: Logiciels libres utilisés et diffusés par les administrations publiques Canadiennes
-index:
-  en: index.html
-  fr: accueil.html
-home:
-  en: Home
-  fr: Accueil
-language:
-  en: English
-  fr: Français
-SkipToMain:
-  en: Skip to main content
-  fr: Passer au contenu principal
-SkipToAbout:
-  en: Skip to "About this site"
-  fr: Passer à « À propos de ce site »
-LanguageSelection:
-  en: Language selection
-  fr: Sélection de la langue
-GCActivitiesInitiatives:
-  en: Government of Canada activities and initiatives
-  fr: Activités et initiatives du gouvernement du Canada
-GoC:
-  en: Government of Canada
-  fr: Gouvernement du Canada
-SearchAndMenus:
-  en: Search and menus
-  fr: Recherche et menus
-SearchWebsite:
-  en: Search website
-  fr: Recherchez le site Web
-SearchCanadaCa:
-  en: Search Canada.ca
-  fr: Rechercher dans Canada.ca
-Search:
-  en: Search
-  fr: Recherche
-TopicsMenu:
-  en: Topics menu
-  fr: Menu des sujets
-
 # Build settings
 markdown: kramdown
 include: [
@@ -97,6 +50,26 @@ defaults:
       path: "en/open-source-standards.md"
     values:
       ref: "home"
+  -
+    scope:
+      path: "en/guides/prior-to-starting.md"
+    values:
+      ref: "starting"
+  -
+    scope:
+      path: "en/guides/using-open-source-software.md"
+    values:
+      ref: "using"
+  -
+    scope:
+      path: "en/guides/contributing-to-open-source-software.md"
+    values:
+      ref: "contributing"
+  -
+    scope:
+      path: "en/guides/publishing-open-source-code.md"
+    values:
+      ref: "publishing"
   -
     scope:
       path: "fr/*"
