@@ -1,1 +1,103 @@
-theme: jekyll-theme-minimal
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+baseurl: "/open-source-logiciel-libre" # the subpath of your site, e.g. /blog
+url: "https://canada-ca.github.io/open-source-logiciel-libre" # the base hostname & protocol for your site
+github_username: canada-ca
+
+wet_cdts_hosturl: "https://www.canada.ca/etc/designs/canada/cdts/gcweb"
+wet_cdts_version: "v4_0_31"
+
+# Translations
+title:
+  en: Open Source Software Standards
+  fr: Logiciels libres
+description:
+  en: Open source software used and released by Canadian public administrations
+  fr: Logiciels libres utilisés et diffusés par les administrations publiques Canadiennes
+index:
+  en: index.html
+  fr: accueil.html
+home:
+  en: Home
+  fr: Accueil
+language:
+  en: English
+  fr: Français
+SkipToMain:
+  en: Skip to main content
+  fr: Passer au contenu principal
+SkipToAbout:
+  en: Skip to "About this site"
+  fr: Passer à « À propos de ce site »
+LanguageSelection:
+  en: Language selection
+  fr: Sélection de la langue
+GCActivitiesInitiatives:
+  en: Government of Canada activities and initiatives
+  fr: Activités et initiatives du gouvernement du Canada
+GoC:
+  en: Government of Canada
+  fr: Gouvernement du Canada
+SearchAndMenus:
+  en: Search and menus
+  fr: Recherche et menus
+SearchWebsite:
+  en: Search website
+  fr: Recherchez le site Web
+SearchCanadaCa:
+  en: Search Canada.ca
+  fr: Rechercher dans Canada.ca
+Search:
+  en: Search
+  fr: Recherche
+TopicsMenu:
+  en: Topics menu
+  fr: Menu des sujets
+
+# Build settings
+markdown: kramdown
+include: ["en", "fr", "README.md"]
+exclude: [
+  "CONTRIBUTING.md",
+  "LICENSE.md",
+  "*.json",
+  "link-check.js"
+]
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-optional-front-matter
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+      type: "pages"
+  -
+    scope:
+      path: "README.md"
+    values:
+      layout: "default"
+      type: "pages"
+      permalink: /index.html
+  -
+    scope:
+      path: "en/"
+    values:
+      lang: "en"
+  -
+    scope:
+      path: "fr/"
+    values:
+      lang: "fr"
+
+optional_front_matter:
+  remove_originals: true
