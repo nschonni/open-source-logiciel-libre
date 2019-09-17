@@ -62,17 +62,23 @@ TopicsMenu:
 
 # Build settings
 markdown: kramdown
-include: ["en", "fr", "README.md"]
+include: [
+  "en",
+  "fr",
+  "index.html"
+]
 exclude: [
   "CONTRIBUTING.md",
   "LICENSE.md",
   "*.json",
-  "link-check.js"
+  "link-check.js",
+  "Gemfile",
+  "Gemfile.lock"
 ]
 
 plugins:
-  - jekyll-redirect-from
   - jekyll-optional-front-matter
+  - jekyll-relative-links
 
 defaults:
   -
@@ -83,19 +89,17 @@ defaults:
       type: "pages"
   -
     scope:
-      path: "README.md"
-    values:
-      layout: "default"
-      type: "pages"
-      permalink: /index.html
-  -
-    scope:
-      path: "en/"
+      path: "en/*"
     values:
       lang: "en"
   -
     scope:
-      path: "fr/"
+      path: "en/open-source-standards.md"
+    values:
+      ref: "home"
+  -
+    scope:
+      path: "fr/*"
     values:
       lang: "fr"
 
