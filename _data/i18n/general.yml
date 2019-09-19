@@ -36,26 +36,26 @@ nav:
     en: Guide for Open Source Software Acquisition
     fr: Code source ouvert
     link:
-      en: guides/prior-to-starting.html
-      fr: guides/prior-to-starting.html
+      en: /en/guides/prior-to-starting.html
+      fr: /fr/guides/prior-to-starting.html
   using:
     en: Use of Open Source Software
     fr: Logiciels libres
     link:
-      en: guides/using-open-source-software.html
-      fr: guides/using-open-source-software.html
+      en: /en/guides/using-open-source-software.html
+      fr: /fr/guides/using-open-source-software.html
   contributing:
     en: Contribution to Open Source Software
     fr: Norme ouverte
     link:
-      en: guides/contributing-to-open-source-software.html
-      fr: guides/contributing-to-open-source-software.html
+      en: /en/guides/contributing-to-open-source-software.html
+      fr: /fr/guides/contributing-to-open-source-software.html
   publishing:
     en: Publication of Open Source Code
     fr: Documentation
     link:
-      en: guides/publishing-open-source-code.html
-      fr: guides/publishing-open-source-code.html
+      en: /en/guides/publishing-open-source-code.html
+      fr: /fr/guides/publishing-open-source-code.html
   Canada:
     en: Government of Canada
     fr: Gouvernement du Canada
