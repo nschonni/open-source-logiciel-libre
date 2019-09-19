@@ -1,10 +1,10 @@
 ---
 head:
   title:
-    en: &title_en Open Resource Exchange
+    en: &title_en Open Source Standards
     fr: &title_fr Échange de ressources ouvert
   description:
-    en: Open source software used and released by Canadian public administrations
+    en: Open source software guidelines for the Canadian public administrations
     fr: Logiciels libres utilisés et diffusés par les administrations publiques Canadiennes
   home:
     en: Home
@@ -30,8 +30,8 @@ nav:
     en: *title_en
     fr: *title_fr
     link:
-      en: open-source-standards.html
-      fr: open-source-standards.html
+      en: /en/open-source-standards.html
+      fr: /fr/open-source-standards.html
   starting:
     en: Guide for Open Source Software Acquisition
     fr: Code source ouvert
